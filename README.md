@@ -37,7 +37,7 @@ Briefly describe the real-world use case and the value it provides.
 ## 🛠️ Tech Stack
 
 ### Core Technologies Used:
-- Frontend:
+- Frontend: Nextjs
 - Backend:
 - Database:
 - APIs:
