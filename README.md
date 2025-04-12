@@ -6,7 +6,8 @@
 
 ---
 
-## 📌 Problem Statement 1 - Weave AI magic with Groq
+## 📌 Problem Statement
+### Problem Statement 1 - Weave AI magic with Groq
 
 ---
 
