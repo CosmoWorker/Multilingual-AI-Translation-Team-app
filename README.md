@@ -41,7 +41,7 @@ Briefly describe the real-world use case and the value it provides.
 - Backend:
 - Database:
 - APIs:
-- Hosting:
+- Hosting: Vercel
 
 ### Sponsor Technologies Used (if any):
 - [✅] **Groq:** _How you used Groq_  
