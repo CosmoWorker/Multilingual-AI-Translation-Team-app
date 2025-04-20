@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 
-export default function translateTTS(){
+export default function TranslateTTS(){
     const [inputText, setInputText]=useState("");
     const [targetLang, setTargetLang]=useState("english");
     const [audioUrl, setAudioUrl]=useState<string|null>(null);

@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react"
 
-export default function translateSTT(){
+export default function TranslateSTT(){
     const [transcript, setTranscript]= useState("");
     const [targetLang, setTargetLang]=useState("english");
     const [isRecording, setIsRecording]=useState(false);
@@ -63,10 +63,10 @@ export default function translateSTT(){
             }
 
             const data= await response.json()
-            if (data && data.transcribedText){
-                setTranscript(data.transcribedText);
+            if (data && data.translatedText){
+                setTranscript(data.translatedText);
             }else{
-                setTranscript("No transcription - issue");
+                setTranscript("transcription translation  - issue");
             }
 
         }catch(e){
