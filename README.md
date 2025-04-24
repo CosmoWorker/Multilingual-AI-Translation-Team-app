@@ -24,8 +24,7 @@ Briefly describe the real-world use case and the value it provides.
 `Your team name here`
 
 ### Team Members:  
-- V Tarang (GitHub / LinkedIn / Role)  
-*(Add links if you want)*
+- V Tarang (GitHub / LinkedIn / Role)
 
 ### Your Approach:  
 - Why you chose this problem  
@@ -38,9 +37,9 @@ Briefly describe the real-world use case and the value it provides.
 
 ### Core Technologies Used:
 - Frontend: Nextjs
-- Backend:
+- Backend: Nextjs
 - Database:
-- APIs:
+- APIs: groq
 - Hosting: Vercel
 
 ### Sponsor Technologies Used (if any):
@@ -93,14 +92,14 @@ Add images, GIFs, or screenshots if helpful!
 ### Local Setup:
 ```bash
 # Clone the repo
-git clone https://github.com/your-team/project-name
+git clone https://github.com/CosmoWorker/project-name
 
 # Install dependencies
 cd project-name
-npm install
+pnpm install
 
 # Start development server
-npm run dev
+pnpm dev
 ```
 
 Provide any backend/frontend split or environment setup notes here.
