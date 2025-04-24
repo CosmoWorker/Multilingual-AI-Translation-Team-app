@@ -50,7 +50,7 @@ export default function TranslateTTS(){
         <main className="p-2 m-2">
             <h1 className="text-2xl font-bold mx-4 my-2 self-center">TTS</h1>
             <textarea 
-                className="w-2xl h-20 bg-gray-800 rounded p-2 "
+                className="w-2xl h-20 bg-gray-800 rounded p-2"
                 placeholder="Enter text to be translated"
                 value={inputText}
                 onChange={(e)=>setInputText(e.target.value)}

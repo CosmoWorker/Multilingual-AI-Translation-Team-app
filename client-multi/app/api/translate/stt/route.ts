@@ -77,7 +77,7 @@ export const POST= async(req: Request)=>{
                 translatedText: translatedText  
             }, {status: 200})
         }else{
-            console.log("Somme issue with translated text");
+            console.log("Some issue with translated text");
         }   
 
     }catch(e){

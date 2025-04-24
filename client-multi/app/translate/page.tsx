@@ -9,6 +9,7 @@ export default function TranslateHome(){
                 <li><a href="/translate/text" className="text-blue-500">Text ↔ Text</a></li>
                 <li><a href="/translate/tts" className="text-blue-500">Text ↔ Speech</a></li>
                 <li><a href="/translate/stt" className="text-blue-500">Speech ↔ Text</a></li>
+                <li><a href="/translate/image" className="text-blue-500">Image ↔ Text Analyis/Translation</a></li>
             </ul>
         </main>
     )
