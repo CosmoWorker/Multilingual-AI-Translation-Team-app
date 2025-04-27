@@ -56,8 +56,8 @@ Highlight the most important features of your project:
 - ✅ Seamlessly convert between different communication formats in one platform.
 - ✅ Convert any text into natural-sounding speech with multiple voices and languages.
 - ✅ Extract text from images or get detailed descriptions with translations of image content.
-
-Add images, GIFs, or screenshots if helpful!
+![polyComm5](https://github.com/user-attachments/assets/22e707b3-4d7b-4a22-b2a3-9193c6ea10e3)
+![polyComm4](https://github.com/user-attachments/assets/d0324e6f-d59f-4da7-86aa-082c9e7349a6)
 
 ---
 
