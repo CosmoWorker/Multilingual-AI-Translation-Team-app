@@ -57,7 +57,7 @@ const item = {
 };
 
 export default function TranslateHome() {
-    const {isLoaded, userId, isSignedIn}= useAuth();
+    const {isLoaded, isSignedIn}= useAuth();
 
     if(!isLoaded){
         return <div className="container py-8">
@@ -96,7 +96,7 @@ export default function TranslateHome() {
         animate="show"
         className="grid gap-6 md:grid-cols-2 max-w-4xl mx-auto"
       >
-        {translateOptions.map((option, index) => (
+        {translateOptions.map((option) => (
           <motion.div key={option.href} variants={item}>
             <Link href={option.href} className="block">
               <Card className={`relative h-full p-6 transition-all duration-300 bg-gradient-to-br ${option.color} hover:shadow-lg group`}>

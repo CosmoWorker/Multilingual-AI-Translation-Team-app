@@ -17,7 +17,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { SignInButton, SignUpButton, useAuth, useClerk, UserButton } from "@clerk/nextjs";
+import { SignInButton, SignUpButton, useAuth, UserButton } from "@clerk/nextjs";
 
 const mainNav = [
   { name: "Text to Speech", href: "/text-to-speech" },
@@ -29,22 +29,22 @@ const mainNav = [
 const toolsItems = [
   {
     title: "Text to Speech",
-    href: "/text-to-speech",
+    href: "/app/translate/tts",
     description: "Convert written text to natural-sounding speech",
   },
   {
     title: "Speech to Text",
-    href: "/speech-to-text",
+    href: "/app/translate/stt",
     description: "Transcribe spoken words to written text in real-time",
   },
   {
     title: "Text to Text",
-    href: "/text-to-text",
+    href: "/app/translate/text",
     description: "Translate or transform text between languages and formats",
   },
   {
     title: "Image to Text",
-    href: "/image-to-text",
+    href: "/app/translate/image",
     description: "Extract and describe text content from images",
   },
 ];

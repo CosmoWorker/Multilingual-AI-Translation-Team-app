@@ -5,7 +5,7 @@ const groq=new Groq({
     apiKey: process.env.GROQ_API_KEY
 });
 
-const voices=[]; //yet to add 
+//const voices=[]; //yet to add 
 
 export const POST=async(req: Request)=>{
     const {text, targetLang}=await req.json();
