@@ -1,8 +1,8 @@
 ![github-submission-banner](https://github.com/user-attachments/assets/a1493b84-e4e2-456e-a791-ce35ee2bcf2f)
 
-# 🚀 Multilingual AI Translation-Team Chat 
+# 🚀 Multimodal Language Utility Hub
 
-> A one-line tagline or mission statement for your project.
+> Transforming how you communicate with our powerful AI-driven tools for text-to-speech, speech-to-text, translation, and image description and much more.
 
 ---
 
@@ -20,11 +20,8 @@ Briefly describe the real-world use case and the value it provides.
 
 ## 🧠 Team & Approach
 
-### Team Name:  
-`Your team name here`
-
-### Team Members:  
-- V Tarang (GitHub / LinkedIn / Role)
+### Team Member:  
+- V Tarang (Student dev)
 
 ### Your Approach:  
 - Why you chose this problem  
@@ -38,7 +35,7 @@ Briefly describe the real-world use case and the value it provides.
 ### Core Technologies Used:
 - Frontend: Nextjs
 - Backend: Nextjs
-- Database:
+- Database: n/a
 - APIs: groq
 - Hosting: Vercel
 
@@ -49,7 +46,6 @@ Briefly describe the real-world use case and the value it provides.
 - [ ] **Base:** _AgentKit / OnchainKit / Smart Wallet usage_  
 - [ ] **Screenpipe:** _Screen-based analytics or workflows_  
 - [ ] **Stellar:** _Payments, identity, or token usage_
-*(Mark with ✅ if completed)*
 ---
 
 ## ✨ Key Features
@@ -86,8 +82,8 @@ Add images, GIFs, or screenshots if helpful!
 
 ### Requirements:
 - Node.js / Python / Docker / etc.
-- API Keys (if any)
-- .env file setup (if needed)
+- API Keys - Groq API, Clerk Secret Key
+- .env file setup - .env.example (for reference)
 
 ### Local Setup:
 ```bash
