@@ -17,6 +17,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { SignInButton, SignUpButton, useAuth, useClerk, UserButton } from "@clerk/nextjs";
 
 const mainNav = [
   { name: "Text to Speech", href: "/text-to-speech" },
@@ -50,6 +51,13 @@ const toolsItems = [
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const {isSignedIn}=useAuth();
+  // const {signOut}=useClerk();
+
+  // const handleSignOut= async()=>{
+  //   await signOut();
+  //   window.location.href='/'
+  // }
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 10);
@@ -122,12 +130,18 @@ export default function Header() {
         <div className="flex items-center gap-4">
           <div className="hidden md:flex md:items-center md:gap-4">
             <ThemeToggle />
-            <Button asChild variant="outline">
-              <Link href="/login">Log in</Link>
-            </Button>
-            <Button asChild>
-              <Link href="/signup">Sign up</Link>
-            </Button>
+            {isSignedIn ? (
+              <UserButton afterSignOutUrl="/" />
+            ) : (
+              <>
+                <SignInButton mode="modal">
+                  <Button variant="outline">Log in</Button>
+                </SignInButton>
+                <SignUpButton mode="modal">
+                  <Button>Sign up</Button>
+                </SignUpButton>
+              </>
+            )}
           </div>
 
           <div className="flex md:hidden">
@@ -169,12 +183,18 @@ export default function Header() {
                     </Link>
                   </nav>
                   <div className="flex flex-col gap-2">
-                    <Button asChild variant="outline">
-                      <Link href="/login">Log in</Link>
-                    </Button>
-                    <Button asChild>
-                      <Link href="/signup">Sign up</Link>
-                    </Button>
+                    {isSignedIn ? (
+                      <UserButton afterSignOutUrl="/" />
+                    ) : (
+                      <>
+                        <SignInButton mode="modal">
+                          <Button variant="outline" className="w-full">Log in</Button>
+                        </SignInButton>
+                        <SignUpButton mode="modal">
+                          <Button className="w-full">Sign up</Button>
+                        </SignUpButton>
+                      </>
+                    )}
                   </div>
                 </div>
               </SheetContent>
