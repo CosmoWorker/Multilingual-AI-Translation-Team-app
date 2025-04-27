@@ -14,7 +14,7 @@
 ## 🎯 Objective
 
 What problem does your project solve, and who does it serve?  
-Briefly describe the real-world use case and the value it provides.
+My project solves the problem of limited translation methods that often lack accuracy and context. Traditional translation tools typically focus only on text or speech, and their responses can sometimes be imprecise. My web-app offers a more versatile and context-aware approach by supporting multiple languages and translation modes, including speech-to-text and text-to-speech and more. This allows users to easily understand content, like memes, in their local language and translate it into their native speech almost instantly. It’s especially useful for people seeking quick, accurate, and seamless communication across language barriers.
 
 ---
 
@@ -24,9 +24,9 @@ Briefly describe the real-world use case and the value it provides.
 - V Tarang (Student dev)
 
 ### Your Approach:  
-- Why you chose this problem  
-- Key challenges you addressed  
-- Any pivots, brainstorms, or breakthroughs during hacking  
+- I chose this problem because it brings together various translation tools and gives me an opportunity to explore how to leverage multiple state-of-the-art models for direct translations. It also opens up possibilities to extend the project further into a full utility hub for translations across different mediums like text, speech, and images.
+- One of the main challenges was finding a reliable model that could handle direct translations, as many APIs didn’t offer a simple, unified solution. Handling audio — parsing it correctly, formatting it properly for the model, and displaying the results — was particularly tricky. Similarly, sending and processing image files was a challenge, both due to API limitations and the need to format them properly for display and model input.
+- I made some pivots, including switching between different models to improve translation quality by using them simultaneously when needed. Another breakthrough was figuring out that sending audio as blobs or chunks helped the backend process it more efficiently. I also spent time brainstorming the UX — how it should look and feel — and thinking about ways to provide richer, more helpful descriptions for translated images.
 
 ---
 
@@ -52,10 +52,10 @@ Briefly describe the real-world use case and the value it provides.
 
 Highlight the most important features of your project:
 
-- ✅ Feature 1  
-- ✅ Feature 2  
-- ✅ Feature 3  
-- ✅ Feature 4  
+- ✅ State of the art models with incredibly fast inference & compute speed with exceptional accuracy.
+- ✅ Seamlessly convert between different communication formats in one platform.
+- ✅ Convert any text into natural-sounding speech with multiple voices and languages.
+- ✅ Extract text from images or get detailed descriptions with translations of image content.
 
 Add images, GIFs, or screenshots if helpful!
 
@@ -63,8 +63,7 @@ Add images, GIFs, or screenshots if helpful!
 
 ## 📽️ Demo & Deliverables
 
-- **Demo Video Link:** [Paste YouTube or Loom link here]  
-- **Pitch Deck / PPT Link:** [Paste Google Slides / PDF link here]  
+- **Demo Video Link:** https://www.loom.com/share/9c187edad4ad4406b546a6ceee313bca?sid=a0400c92-c45c-4642-a07c-ea6d8d7a81a3 
 
 ---
 
@@ -81,7 +80,8 @@ Add images, GIFs, or screenshots if helpful!
 ## 🧪 How to Run the Project
 
 ### Requirements:
-- Node.js / Python / Docker / etc.
+- Node.js - ^v20
+- pnpm, npm
 - API Keys - Groq API, Clerk Secret Key
 - .env file setup - .env.example (for reference)
 
@@ -96,32 +96,31 @@ pnpm install
 
 # Start development server
 pnpm dev
-```
 
-Provide any backend/frontend split or environment setup notes here.
-
----
+# Test Credentials
+username - lakakaisdope@gmail.com
+password - 321Test*
 
 ## 🧬 Future Scope
 
 List improvements, extensions, or follow-up features:
 
-- 📈 More integrations  
-- 🛡️ Security enhancements  
-- 🌐 Localization / broader accessibility  
+- 📈 More integrations - Future plans include building a team chat app and a one-on-one video chat platform with seamless translation integration and contextual analysis(if any). We also plan to store essential required user data in a database.
+- 🛡️ Security enhancements - Focused on strengthening privacy and ensuring that all stored data remains protected against leaks and unauthorized access.
+- 🌐 Localization / broader accessibility - Expanding to native mobile applications to make the platform even more accessible to a wider, diverse & global audience.
 
 ---
 
 ## 📎 Resources / Credits
 
-- APIs or datasets used  
-- Open source libraries or tools referenced  
-- Acknowledgements  
+- APIs or datasets used  -  Groq
+- Open source libraries or tools referenced  - Shadcn 
+- Acknowledgements  - bolt(stackblitz), Clerk docs
 
 ---
 
 ## 🏁 Final Words
 
-Share your hackathon journey — challenges, learnings, fun moments, or shout-outs!
+It was a nice opportunity for me to work on a project from a pool of problem statements provided by the incredible community of HackHazards. This was also a learning opportunity all along while building something new which builds up the necessary skills towards building even more such projects in this journey of shipping code.
 
 ---
