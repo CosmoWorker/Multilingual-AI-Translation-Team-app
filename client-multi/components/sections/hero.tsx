@@ -29,10 +29,10 @@ export function HeroSection() {
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button size="lg" asChild>
-                <Link href="/getting-started">Get Started</Link>
+                <Link href="/translate">Get Started</Link>
               </Button>
               <Button size="lg" variant="outline" asChild>
-                <Link href="/demo">See Demo</Link>
+                <Link href="https://www.loom.com/share/9c187edad4ad4406b546a6ceee313bca?sid=a0400c92-c45c-4642-a07c-ea6d8d7a81a3">See Demo</Link>
               </Button>
             </div>
           </div>

@@ -28,16 +28,16 @@ export default function Footer() {
           <div className="flex flex-col gap-2">
             <p className="font-medium">Product</p>
             <nav className="flex flex-col gap-2">
-              <Link href="/text-to-speech" className={footerTextStyle}>
+              <Link href="/translate/tts" className={footerTextStyle}>
                 Text to Speech
               </Link>
-              <Link href="/speech-to-text" className={footerTextStyle}>
+              <Link href="/translate/stt" className={footerTextStyle}>
                 Speech to Text
               </Link>
-              <Link href="/text-to-text" className={footerTextStyle}>
+              <Link href="/translate/text" className={footerTextStyle}>
                 Text to Text
               </Link>
-              <Link href="/image-to-text" className={footerTextStyle}>
+              <Link href="/translate/image" className={footerTextStyle}>
                 Image to Text
               </Link>
             </nav>
@@ -65,7 +65,7 @@ export default function Footer() {
               <Link href="/terms" className={footerTextStyle}>
                 Terms
               </Link>
-              <Link href="/licenses" className={footerTextStyle}>
+              <Link href="https://github.com/CosmoWorker/Multimodal-Language-Team-Utility-Hub/blob/main/LICENSE" className={footerTextStyle}>
                 Licenses
               </Link>
             </nav>
@@ -79,7 +79,7 @@ export default function Footer() {
             <Link href="https://twitter.com" className={partialFooterStyle}>
               Twitter
             </Link>
-            <Link href="https://github.com" className={partialFooterStyle}>
+            <Link href="https://github.com/CosmoWorker/" className={partialFooterStyle}>
               GitHub
             </Link>
             <Link href="https://discord.com" className={partialFooterStyle}>

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Languages, MessageSquare, Mic, Image, ArrowRight } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { useAuth } from "@clerk/nextjs";
+import { Skeleton } from "@/components/ui/skeleton";
 
 const translateOptions = [
   {
@@ -60,9 +61,28 @@ export default function TranslateHome() {
     const {isLoaded, isSignedIn}= useAuth();
 
     if(!isLoaded){
-        return <div className="container py-8">
-            Loading...
-        </div>
+        return (
+            <main className="container mx-auto px-4 py-12">
+                <div className="max-w-3xl mx-auto text-center mb-12">
+                    <Skeleton className="h-10 w-[200px] mx-auto mb-4" />
+                    <Skeleton className="h-4 w-[300px] mx-auto" />
+                </div>
+
+                <div className="grid gap-6 md:grid-cols-2 max-w-4xl mx-auto">
+                    {Array.from({ length: 4 }).map((_, index) => (
+                        <div key={index}>
+                            <Card className="relative h-full p-6">
+                                <Skeleton className="rounded-full w-12 h-12 mb-4" />
+                                <Skeleton className="h-6 w-[150px] mb-2" />
+                                <Skeleton className="h-4 w-[200px] mb-2" />
+                                <Skeleton className="h-4 w-[150px] mb-2" />
+                                <Skeleton className="h-4 w-[100px]" />
+                            </Card>
+                        </div>
+                    ))}
+                </div>
+            </main>
+        );
     }
 
     if (!isSignedIn){
